@@ -10,7 +10,7 @@ function MemberCoupon(props) {
   const token = localStorage.getItem("token");
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/api/profile", {
+      .get("34.220.146.97:3000/api/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((serverResponse) => {

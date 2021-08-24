@@ -53,7 +53,7 @@ function FavoriteProducts(props) {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/api/profile/productLike", {
+      .get("34.220.146.97:3000/api/profile/productLike", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((serverResponse) => {
@@ -93,7 +93,7 @@ function FavoriteProducts(props) {
                       });
                       setFavoriteP(newFavProducts);
                       axios.delete(
-                        `http://localhost:3000/api/profile/productLike/${findProduct.id}`,
+                        `34.220.146.97:3000/api/profile/productLike/${findProduct.id}`,
                         {
                           headers: { Authorization: `Bearer ${token}` },
                         }

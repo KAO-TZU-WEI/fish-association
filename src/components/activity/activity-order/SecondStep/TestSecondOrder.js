@@ -14,7 +14,7 @@ function SecondOrder() {
   });
 
   const saveFormData = async () => {
-    const response = await fetch("http://localhost:3000/api/activity/order", {
+    const response = await fetch("34.220.146.97:3000/api/activity/order", {
       method: "POST",
       body: JSON.stringify(values),
     });

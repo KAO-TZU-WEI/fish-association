@@ -9,7 +9,7 @@ function JoinActivity() {
   const token = localStorage.getItem("token");
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/api/profile/activity", {
+      .get("34.220.146.97:3000/api/profile/activity", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((serverResponse) => {

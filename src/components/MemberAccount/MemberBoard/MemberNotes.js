@@ -12,7 +12,7 @@ function MemberNotes() {
   const token = localStorage.getItem("token");
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/api/profile/note", {
+      .get("34.220.146.97:3000/api/profile/note", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((serverResponse) => {
@@ -63,7 +63,7 @@ function MemberNotes() {
 
                         axios
                           .patch(
-                            `http://localhost:3000/api/profile/note/patch/${note.id}`,
+                            `34.220.146.97:3000/api/profile/note/patch/${note.id}`,
                             {
                               headers: { Authorization: `Bearer ${token}` },
                             }

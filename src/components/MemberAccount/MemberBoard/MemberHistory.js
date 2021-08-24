@@ -11,7 +11,7 @@ function MemberHistory() {
   const token = localStorage.getItem("token");
   React.useEffect(() => {
     axios
-      .get("http://localhost:3000/api/profile/order", {
+      .get("34.220.146.97:3000/api/profile/order", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((serverResponse) => {
